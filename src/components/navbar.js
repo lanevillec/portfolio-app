@@ -1,22 +1,25 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-const navbar= () =>{
+const Navbar = () => {
   return (
-  <div>
-    <h1>hello!</h1>
-    <li>
-      <Link to="/">Dogs</Link>
-    </li>
-    <li>
-      <Link to="/cats">Cats</Link>
-    </li>
-    <li>
-      <Link to="/sheeps">Sheeps</Link>
-    </li>
-    <li>
-      <Link to="/goats">Goats</Link>
-    </li>
-  </div>
+    <div>
+      <h1>Home Page</h1>
+      <br />
+      <ul>
+        <li>
+          {/* Endpoint to route to Home component */}
+          <Link to="/dogs">Dogs</Link>
+        </li>
+        <li>
+          {/* Endpoint to route to About component */}
+          <Link to="/cats">Cats</Link>
+        </li>
+        <li>
+          {/* Endpoint to route to Contact Us component */}
+          <Link to="/Goats">Goats</Link>
+        </li>
+      </ul>
+    </div>
   );
-}
-export default navbar;
+};
+export default Navbar;
