@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Dogs from "./pages/Dogs";
 import Cats from "./pages/Cats";
