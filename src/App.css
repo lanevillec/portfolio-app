@@ -1,6 +1,8 @@
 .App {
+  --background-color: #22577A;
+  --black: #002626;
   text-align: center;
-  background-color: black;
+  background-color: var(--black);
 }
 
 .App-logo {

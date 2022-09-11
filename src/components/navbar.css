@@ -1,10 +1,11 @@
 .navigation-menu {
-    --background-color: #252532;
-    background-color: #252532;
+    --header-color: #FFF;
+    --selected-tab-color: #DEF7EB;
+    --unselected-tab-color: #EFFBF5;
+    --font-color: #242C2E;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --hover-font-color: #AD8A1F;
     display: flex;
-    --black: #000;
-    --font-color: #C2E7D9;
-    --border-color: rgba(255, 255, 255, .5);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -15,12 +16,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--black);
+    /*background-color: var(--black);*/
+    background-image: url("https://www.freecreatives.com/wallpapers/geometry-wallpaper.html");
 }
 
 .contactList {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 .contactLink {
@@ -28,22 +33,26 @@
     color: var(--font-color);
 }
 
+.contactLink:hover {
+    color: var(--hover-font-color);
+}
+
 .nameAndTabs {
     display: flex;
     justify-content: center;
     width: 100%;
     flex-direction: column;
-    background-color: var(--black);
+    background-color: var(--header-color);
 }
 
 .name {
     color: var(--font-color);
-    background-color: var(--black);
+    background-color: var(--header-color);
     display: flex;
     max-width: 100%;
     margin: 0;
     padding-left: 1.5rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     justify-content: center;
     font-family: 'NotoSans';
     /*border-bottom: 0.05rem solid var(--border-color);*/
@@ -60,24 +69,32 @@
 
 .tab {
     /*padding: 0.5rem;*/
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 0.4rem;
     justify-content: center;
     color: var(--font-color);
-    background-color: var(--black);
+    background-color: var(--unselected-tab-color);
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
     width: 100%;
     display: flex;
+    font-family: 'NotoSans';
+    font-weight: lighter;
+    border-top: 0.05rem solid var(--border-color);
+    border-left: 0.005rem  solid  var(--border-color);
+    border-right: 0.005rem  solid var(--border-color);
     /*border-bottom: 0.01rem  solid var(--border-color);*/
 }
 
 .selectedTab {
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-    /*border-bottom: 0;
+    border-bottom: 0;
     border-top: 0.05rem solid var(--border-color);
     border-left: 0.02rem  solid  var(--border-color);
-    border-right: 0.02rem  solid var(--border-color);*/
-    background-color: var(--background-color);
+    border-right: 0.02rem  solid var(--border-color);
+    background-color: var(--selected-tab-color);
+    font-weight: bolder;
 }
 
 .aboutMe {
@@ -96,8 +113,12 @@ a {
 }
 
 a:hover {
-    color: #00F
+    color: var(--hover-font-color);
 }
+
+/*h1:hover {
+    color: var(--hover-font-color);
+}*/
 
 /*.navbar li {
     size: 12px;

@@ -21,7 +21,20 @@ const Navbar = () => {
   return (
     <div className="navigation-menu">
       <div className="nameAndTabs">
-        <h1 className="name">Christopher Laneville</h1>
+        <div>
+          <h1 className="name">Christopher Laneville</h1>
+          <ul className="contactList">
+            <li className="contactLink">
+              <Link to={{ pathname: "mailto:lanevillec@gmail.com" }} style={{textDecoration: 'none'}} >email</Link>
+            </li>
+            <li className="contactLink">
+              <Link to={{ pathname: "https://www.linkedin.com/in/chrislaneville" }} target="_blank" style={{textDecoration: 'none'}} >linkedIn</Link>
+            </li>
+            <li className="contactLink">
+              <Link to={{ pathname: "https://trailblazer.me/id/lanevillec" }} target="_blank" style={{textDecoration: 'none'}} >trailhead</Link>
+            </li>
+          </ul>
+        </div>
         <ul id="tabList" className="tabList">
         <li id='About Me' className="tab selectedTab">
             {/* Endpoint to route to About Me component */}
@@ -29,7 +42,7 @@ const Navbar = () => {
           </li>
           <li id='Projects' className="tab">
             {/* Endpoint to route to Projects component */}
-            <Link id='Projects' name='Projects' style={{textDecoration: 'none'}} className="link" to="/projects" onClick={selectTab}>Projects</Link>
+            <Link id='Projects' name='Projects' style={{textDecoration: 'none'}} to="/projects" onClick={selectTab}>Projects</Link>
           </li>
           <li id='Interests' className="tab">
             {/* Endpoint to route to Interests component */}
