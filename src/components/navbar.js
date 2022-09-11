@@ -25,13 +25,13 @@ const Navbar = () => {
           <h1 className="name">Christopher Laneville</h1>
           <ul className="contactList">
             <li className="contactLink">
-              <Link to={{ pathname: "mailto:lanevillec@gmail.com" }} style={{textDecoration: 'none'}} >email</Link>
+              <a href="mailto:lanevillec@gmail.com" style={{textDecoration: 'none'}} >email</a>
             </li>
             <li className="contactLink">
-              <Link to={{ pathname: "https://www.linkedin.com/in/chrislaneville" }} target="_blank" style={{textDecoration: 'none'}} >linkedIn</Link>
+              <a rel="noreferrer" href="https://www.linkedin.com/in/chrislaneville" target="_blank" style={{textDecoration: 'none'}} >linkedIn</a>
             </li>
             <li className="contactLink">
-              <Link to={{ pathname: "https://trailblazer.me/id/lanevillec" }} target="_blank" style={{textDecoration: 'none'}} >trailhead</Link>
+              <a  rel="noreferrer" href="https://trailblazer.me/id/lanevillec" target="_blank" style={{textDecoration: 'none'}} >trailhead</a>
             </li>
           </ul>
         </div>
