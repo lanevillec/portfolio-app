@@ -1,12 +1,12 @@
 import React from 'react';
-const Goats = () =>{
+const projects = () =>{
   return (
     <div>
-      <h3>Goat</h3>
+      <h3>Projects</h3>
       <div>
-        Goats
+        Projects!
       </div>
     </div>
   );
 }
-export default Goats;
+export default projects;

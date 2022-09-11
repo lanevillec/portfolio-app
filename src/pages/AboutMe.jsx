@@ -1,12 +1,12 @@
 import React from 'react';
-const Dogs = () =>{
+const aboutMe = () =>{
   return (
     <div>
-      <h3>Dogs</h3>
+      <h3>About Me</h3>
       <div>
-        Dogs!
+        About me!
       </div>
     </div>
   );
 }
-export default Dogs;
+export default aboutMe;

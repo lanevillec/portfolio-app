@@ -1,24 +1,24 @@
 
 import './App.css';
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Dogs from "./pages/Dogs";
-import Cats from "./pages/Cats";
-import Sheeps from "./pages/Sheeps";
-import Goats from "./pages/Goats";
+import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
+import Interests from "./pages/Interests";
 
-const App = () => {
+export default function App() {
   return (
     <Router>
       <Navbar></Navbar>
         <Routes>
-          <Route exact path="/pages/Dogs" element={<Dogs/>}/>
-          <Route exact path="/pages/Cats" element={<Cats/>}/>
-          <Route exact path="/pages/Goats" element={<Goats/>}/>
-          <Route path="/pages/Sheeps" element={<Sheeps/>}/>
+          <Route exact path="/Projects" element={<Projects/>}/>
+          <Route exact path="/AboutMe" element={<AboutMe/>}/>
+          <Route exact path="/Interests" element={<Interests/>}/>
         </Routes>
     </Router>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
