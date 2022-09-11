@@ -49,9 +49,7 @@ const Navbar = () => {
             <Link id='Interests' name='Interests' style={{textDecoration: 'none'}} to="/interests" onClick={selectTab}>Interests</Link>
           </li>
         </ul>
-      </div>
-      <div className="tabs">
-      </div>
+        </div>
     </div>
   );
 };
