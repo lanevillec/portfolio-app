@@ -1,11 +1,8 @@
-import React, {useRef} from 'react';
-import './navbar.css';
-import emailIcon from '../icons/emailIcon.jpg';
+import './navbar.css';import emailIcon from '../icons/emailIcon.jpg';
 import linkedInIcon from '../icons/linkedInIcon.png';
 import trailheadIcon from '../icons/trailheadIcon.png';
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const myRefname= useRef(null);
   const selectTab = (e) => {
 
     e.preventDefault();
