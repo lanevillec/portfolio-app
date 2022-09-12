@@ -1,6 +1,4 @@
-import './navbar.css';import emailIcon from '../icons/emailIcon.jpg';
-import linkedInIcon from '../icons/linkedInIcon.png';
-import trailheadIcon from '../icons/trailheadIcon.png';
+import React from 'react';
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const selectTab = (e) => {
@@ -24,7 +22,7 @@ const Navbar = () => {
               <a href="mailto:lanevillec@gmail.com" style={{textDecoration: 'none'}} >email</a>
             </li>
             <li className="contactLink">
-              <a rel="noreferrer" href="https://www.linkedin.com/in/chrislaneville" target="_blank" style={{textDecoration: 'none'}} >linkedIn</a>
+              <a rel="noreferrer" href="https://linkedin.com/in/chrislaneville" target="_blank" style={{textDecoration: 'none'}} >linkedIn</a>
             </li>
             <li className="contactLink">
               <a rel="noreferrer" href="https://trailblazer.me/id/lanevillec" target="_blank" style={{textDecoration: 'none'}} >trailhead</a>
