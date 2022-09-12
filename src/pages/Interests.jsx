@@ -1,5 +1,5 @@
 import React from 'react';
-const interests = () =>{
+const Interests = () =>{
   return (
     <div>
       <h3>My Interests!</h3>
@@ -9,4 +9,4 @@ const interests = () =>{
     </div>
   );
 }
-export default interests;
+export default Interests;

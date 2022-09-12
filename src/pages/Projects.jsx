@@ -1,5 +1,5 @@
 import React from 'react';
-const projects = () =>{
+const Projects = () =>{
   return (
     <div>
       <h3>Projects</h3>
@@ -9,4 +9,4 @@ const projects = () =>{
     </div>
   );
 }
-export default projects;
+export default Projects;
