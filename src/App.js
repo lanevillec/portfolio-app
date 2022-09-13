@@ -1,7 +1,7 @@
 
 import './App.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Switch, Navigate } from "react-router-dom";
 import Navbar from "./components/navbar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
@@ -12,6 +12,7 @@ export default function App() {
     <Router>
       <Navbar></Navbar>
         <Routes>
+          <Route exact path="/" element={<Navigate to="/AboutMe"/>}/>
           <Route exact path="/Projects" element={<Projects/>}/>
           <Route exact path="/AboutMe" element={<AboutMe/>}/>
           <Route exact path="/Interests" element={<Interests/>}/>
