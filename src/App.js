@@ -12,7 +12,8 @@ export default function App() {
     <Router>
       <Navbar></Navbar>
         <Routes>
-          <Route exact path="/" element={<Navigate to="/AboutMe"/>}/>
+          <Route exact path="/" element={<Navigate to="/AboutMe" replace={true}/>}/>
+          <Route exact path="/AboutMe" element={<AboutMe/>}/>
           <Route exact path="/Projects" element={<Projects/>}/>
           <Route exact path="/AboutMe" element={<AboutMe/>}/>
           <Route exact path="/Interests" element={<Interests/>}/>
