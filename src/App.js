@@ -1,7 +1,7 @@
 
 import './App.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route, Switch, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/navbar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
