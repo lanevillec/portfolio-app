@@ -24,7 +24,7 @@ Sets, Workflows, Approval Processes, Email Templates, Process Builder, Flows</li
           <li className="skill">Design Patterns: coding best practices, bulkification, fflib, service classes, test factories, 
 enterprise architecture, scalability, reliability</li>
           <li className="skill">IDE: VSCode, IntelliJ, Eclipse, Developer Console</li>
-          <li className="skill">>Release: Salesforce CLI, SFDX, CI/CD (Azure DevOps)</li>
+          <li className="skill">Release: Salesforce CLI, SFDX, CI/CD (Azure DevOps)</li>
           <li className="skill">Agile: Azure Boards, ServiceNow, Workfront, Jira</li>
           <li className="skill">Other Languages: JavaScript, Java, SQL, Excel</li>
         </ul>
