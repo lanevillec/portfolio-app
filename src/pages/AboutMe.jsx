@@ -52,7 +52,7 @@ enterprise architecture, scalability, reliability</li>
       </div>
       <div className="aboutMeComp experience">Where I've worked...</div>
       <div className="aboutMeComp hobbiesInterests">Where I've learned...</div>
-    </div>
+  </div>
   );
 }
 export default AboutMe;

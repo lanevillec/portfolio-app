@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: sticky;
 }
 
 .nameAndContactInfo {
@@ -215,6 +216,7 @@ a:hover {
 .sfCertList {
     list-style-type : none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0;
     padding: 0;
