@@ -1,7 +1,7 @@
 
 import './App.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useRoutes } from "react-router-dom";
 import Navbar from "./components/navbar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
@@ -9,16 +9,18 @@ import Interests from "./pages/Interests";
 
 export default function App() {
   return (
-    <Router>
-      <Navbar></Navbar>
-        <Routes>
-          <Route exact path="/" element={<Navigate to="/AboutMe"/>}/>
-          <Route exact path="/AboutMe" element={<AboutMe/>}/>
-          <Route exact path="/Projects" element={<Projects/>}/>
-          <Route exact path="/AboutMe" element={<AboutMe/>}/>
-          <Route exact path="/Interests" element={<Interests/>}/>
-        </Routes>
-    </Router>
+    <BrowserRouter>
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route exact path="/" element={<AboutMe/>}/>
+        <Route exact path="/AboutMe" element={<AboutMe/>}/>
+        <Route exact path="/Projects" element={<Projects/>}/>
+        <Route exact path="/AboutMe" element={<AboutMe/>}/>
+        <Route exact path="/Interests" element={<Interests/>}/>
+      </Routes>
+    </div>
+    </BrowserRouter>
   );
 }
 
