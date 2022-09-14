@@ -1,13 +1,38 @@
 
 import './App.css';
 import ReactDOM from "react-dom/client";
+import React, {useRef, useEffect, useCallback} from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from "./components/navbar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Interests from "./pages/Interests";
 
-export default function App() {
+const App = () => {
+
+
+  useEffect(() => {
+    // call api or anything
+    console.log("loaded");
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  const handleScroll = (e) => {
+    console.log('Scrolling!')
+    console.log('Scroll position is ' + window.scrollY);
+    var addClasses = false;
+    if(window.scrollY >= 200){
+      console.log('past the scroll point!');
+      addClasses = true;
+      if(addClasses){
+        document.getElementById("tabList").classList.add('docked');
+      }
+    } else {
+      addClasses = false;
+      document.getElementById("tabList").classList.remove('docked');
+    }
+  }
+
   return (
     <BrowserRouter>
     <div>
@@ -24,5 +49,7 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
+
+//const root = ReactDOM.createRoot(document.getElementById('root'));
+//root.render(<App />);

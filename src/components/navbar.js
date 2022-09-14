@@ -10,7 +10,6 @@ const Navbar = () => {
     tabList.forEach(tab => {
       tab.id === currentTab ? tab.classList.add('selectedTab') : tab.classList.remove('selectedTab');
     });
-
     
     routeChange(currentTab);
 
@@ -21,7 +20,6 @@ const Navbar = () => {
     let path = '/' + currentTab;
     navigate(path);
   }
-
 
 
   return (

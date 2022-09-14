@@ -71,6 +71,12 @@
     justify-content: center;
 }
 
+.docked {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .tab {
     /*padding: 0.5rem;*/
     padding: 0.4rem;
