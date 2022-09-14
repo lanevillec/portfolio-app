@@ -1,7 +1,7 @@
 
 import './App.css';
-import ReactDOM from "react-dom/client";
-import React, {useRef, useEffect, useCallback} from "react";
+//import ReactDOM from "react-dom/client";
+import React, {useEffect} from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from "./components/navbar";
 import AboutMe from "./pages/AboutMe";
