@@ -14,6 +14,7 @@
 
 .nameAndContactInfo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     /*background-color: var(--black);*/
@@ -96,9 +97,6 @@
     border-right: 0.02rem  solid var(--border-color);
     background-color: var(--selected-tab-color);
     font-weight: bolder;
-}
-
-.aboutMe {
 }
 
 /* <ul> */

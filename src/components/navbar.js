@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const selectTab = (e) => {
 
@@ -10,7 +10,19 @@ const Navbar = () => {
     tabList.forEach(tab => {
       tab.id === currentTab ? tab.classList.add('selectedTab') : tab.classList.remove('selectedTab');
     });
+
+    
+    routeChange(currentTab);
+
   }
+
+  let navigate = useNavigate();
+  const routeChange = (currentTab) => {
+    let path = '/' + currentTab;
+    navigate(path);
+  }
+
+
 
   return (
     <div className="navigation-menu">
@@ -30,9 +42,9 @@ const Navbar = () => {
           </ul>
         </div>
         <ul id="tabList" className="tabList">
-        <li id='About Me' className="tab selectedTab" onClick={selectTab}>
+        <li id='AboutMe' className="tab selectedTab" onClick={selectTab}>
             {/* Endpoint to route to About Me component */}
-            <Link id='About Me' name='About Me' style={{textDecoration: 'none'}} to="/aboutMe">Profile</Link>
+            <Link id='AboutMe' name='About Me' style={{textDecoration: 'none'}} to="/aboutMe">Profile</Link>
           </li>
           <li id='Projects' className="tab" onClick={selectTab}>
             {/* Endpoint to route to Projects component */}
