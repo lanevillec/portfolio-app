@@ -63,7 +63,7 @@ const AboutMe = () => {
               <p className="timelineYear">Today</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot>
+                <TimelineDot color="primary">
                   <EmojiEmotionsIcon/>
                 </TimelineDot>
                 <TimelineConnector />
@@ -80,7 +80,7 @@ const AboutMe = () => {
                 <p className="timelineYear">2019</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot>
+                <TimelineDot color="primary">
                   <ComputerIcon/>
                 </TimelineDot>
                 <TimelineConnector />
@@ -95,7 +95,7 @@ const AboutMe = () => {
               <p className="timelineYear">2018</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot>
+                <TimelineDot color="primary">
                   <AutoStoriesIcon/>
                 </TimelineDot>
                 <TimelineConnector />
@@ -112,7 +112,7 @@ const AboutMe = () => {
               <p className="timelineYear">2012</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot>
+                <TimelineDot color="primary">
                   <RestaurantIcon/>
                 </TimelineDot>
                 <TimelineConnector />
@@ -129,7 +129,7 @@ const AboutMe = () => {
               <p className="timelineYear">2008</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot>
+                <TimelineDot color="primary">
                   <SchoolIcon/>
                 </TimelineDot>
               </TimelineSeparator>

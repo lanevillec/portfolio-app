@@ -16,21 +16,21 @@ const Navbar = () => {
             <Breadcrumbs separator="" className="navLinks" aria-label="breadcrumb">
               <Link
                 underline="hover"
-                color="inherit"
+                color="primary"
                 href="mailto:lanevillec@gmail.com"
               >
                 <EmailIcon/>
               </Link>
               <Link
                 underline="hover"
-                color="inherit"
+                color="primary"
                 href="https://linkedin.com/in/chrislaneville"
               >
                 <LinkedInIcon/>
               </Link>
               <Link
                 underline="hover"
-                color="inherit"
+                color="primary"
                 href="https://trailblazer.me/id/lanevillec"
               >
                 <HikingIcon/>
