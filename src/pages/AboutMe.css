@@ -1,0 +1,117 @@
+/**********ABOUT ME************/
+.aboutMePage {
+    --section-color-1:#FFF;
+    --section-color-2: #EFFBF5;
+    font-family: 'NotoSans';
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.aboutMeComp {
+    width:50%;
+    padding: 1rem;
+    color: var(--hover-font-color);
+    border-radius: 0.5rem;
+    margin: 0.25rem;
+}
+
+.overview {
+    border-top-left-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.skills {
+    border-top-left-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--section-color-1);
+    flex-grow: 2;
+}
+
+.skillList {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.skill {
+    padding-bottom: 1rem;
+}
+
+.certifications {
+    border-top-right-radius: 0.5rem;
+    background-color: var(--section-color-2);
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.experience {
+    border-bottom-left-radius: 0.5rem;
+    background-color: var(--section-color-2);
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+.hobbiesInterests {
+    border-bottom-right-radius: 0.5rem;
+    background-color: var(--section-color-1);
+    width: 100%;
+}
+
+.sfCertIcon {
+    width: 6rem;
+    padding: 0.5rem;
+    transition: transform .7s ease-in-out;
+}
+
+.sfCertIcon:hover {
+    transform: rotate(360deg);
+}
+
+.sfCertList {
+    list-style-type : none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.5rem;
+
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 20rem;
+}
+
+.paperHeader {
+    margin: 0;
+    padding: 0;
+}
+
+.timelineContent{
+    /*background-color: #FFF;
+    border-radius: 2rem;*/
+    margin-top: 1rem;
+    font-family: 'NotoSans';
+}
+
+.timelineContentHeader{
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.timelineContentBody {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.projectCard {
+    background-color: #F3F3F7;
+    margin: 1rem;
+}
+

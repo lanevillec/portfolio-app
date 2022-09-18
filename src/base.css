@@ -1,0 +1,8 @@
+.colors {
+    --header-color: #FFF;
+    --selected-tab-color: #ECEDE8;
+    --unselected-tab-color: #F6F6F4;
+    --font-color: #242C2E;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --hover-font-color: #768E93;
+}

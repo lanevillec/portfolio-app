@@ -1,7 +1,9 @@
-import React from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import { Breadcrumbs, Link, Typography} from "@material-ui/core";
+import './navbar.css';
 const Navbar = () => {
-  const selectTab = (e) => {
+  /*const selectTab = (e) => {
 
     e.preventDefault();
     let currentTab = e.currentTarget.id;
@@ -13,45 +15,54 @@ const Navbar = () => {
     
     routeChange(currentTab);
 
-  }
+  }*/
 
-  let navigate = useNavigate();
+  /*let navigate = useNavigate();
   const routeChange = (currentTab) => {
     let path = '/' + currentTab;
     navigate(path);
-  }
-
+  }*/
 
   return (
     <div className="navigation-menu">
       <div className="nameAndTabs">
         <div className="nameAndContactInfo">
-          <h1 className="name">Christopher Laneville</h1>
-          <ul className="contactList">
-            <li className="contactLink">
-              <a href="mailto:lanevillec@gmail.com" style={{textDecoration: 'none'}} >email</a>
-            </li>
-            <li className="contactLink">
-              <a rel="noreferrer" href="https://linkedin.com/in/chrislaneville" target="_blank" style={{textDecoration: 'none'}} >linkedIn</a>
-            </li>
-            <li className="contactLink">
-              <a rel="noreferrer" href="https://trailblazer.me/id/lanevillec" target="_blank" style={{textDecoration: 'none'}} >trailhead</a>
-            </li>
-          </ul>
+          <div className="name">
+            <h1 className="nameText">Christopher Laneville</h1>
+            <Breadcrumbs className="nav" aria-label="breadcrumb">
+            <Link underline="hover" color="inherit" href="/">
+              home
+            </Link>
+            <Link underline="hover" color="inherit" href="/Projects">
+              projects
+            </Link>
+            <Link underline="hover" color="inherit" href="/Interests">
+              extra
+            </Link>
+          </Breadcrumbs>
+          </div>
+          <Breadcrumbs className="contactList" aria-label="breadcrumb">
+            <Link underline="hover" color="inherit" href="mailto:lanevillec@gmail.com">
+              email
+            </Link>
+            <Link underline="hover" color="inherit" href="https://linkedin.com/in/chrislaneville">
+              linkedin
+            </Link>
+            <Link underline="hover" color="inherit" href="https://trailblazer.me/id/lanevillec">
+              trailhead
+            </Link>
+          </Breadcrumbs>
         </div>
         <ul id="tabList" className="tabList">
-        <li id='AboutMe' className="tab selectedTab" onClick={selectTab}>
-            {/* Endpoint to route to About Me component */}
+        {/*<li id='AboutMe' className="tab selectedTab" onClick={selectTab}>
             <Link id='AboutMe' name='About Me' style={{textDecoration: 'none'}} to="/aboutMe">Profile</Link>
           </li>
           <li id='Projects' className="tab" onClick={selectTab}>
-            {/* Endpoint to route to Projects component */}
             <Link id='Projects' name='Projects' style={{textDecoration: 'none'}} to="/projects">Projects</Link>
           </li>
           <li id='Interests' className="tab" onClick={selectTab}>
-            {/* Endpoint to route to Interests component */}
             <Link id='Interests' name='Interests' style={{textDecoration: 'none'}} to="/interests">Personal</Link>
-          </li>
+          </li>*/}
         </ul>
         </div>
     </div>
