@@ -19,21 +19,21 @@ const Navbar = () => {
                 color="primary"
                 href="mailto:lanevillec@gmail.com"
               >
-                <EmailIcon/>
+                <EmailIcon className="contactIcon"/>
               </Link>
               <Link
                 underline="hover"
                 color="primary"
                 href="https://linkedin.com/in/chrislaneville"
               >
-                <LinkedInIcon/>
+                <LinkedInIcon className="contactIcon"/>
               </Link>
               <Link
                 underline="hover"
                 color="primary"
                 href="https://trailblazer.me/id/lanevillec"
               >
-                <HikingIcon/>
+                <HikingIcon className="contactIcon"/>
               </Link>
             </Breadcrumbs>
           </div>

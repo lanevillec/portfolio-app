@@ -133,7 +133,7 @@ const AboutMe = () => {
                   <SchoolIcon/>
                 </TimelineDot>
               </TimelineSeparator>
-              <TimelineContent></TimelineContent>
+              <TimelineContent className="timelineContent"></TimelineContent>
             </TimelineItem>
           </Timeline>
         </Paper>
@@ -199,7 +199,7 @@ const AboutMe = () => {
             </li>
           </ul>
         </Paper>
-        <Paper className="paper" elevation={3}>
+        <Paper className="paper skills" elevation={3}>
           <h2 className="paperHeader">Skills</h2>
           <div className="accordionContainer">
             <Accordion className="accordion">
@@ -211,12 +211,19 @@ const AboutMe = () => {
               >
                 <Typography>Salesforce Configuration</Typography>
               </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Custom Objects, Formulas, Validation Rules, Profiles,
-                  Permission Sets, Workflows, Approval Processes, Email
-                  Templates, Process Builder, Flows
-                </Typography>
+              <AccordionDetails className="accordionDetails">
+                <ul className="accordionList">
+                  <li className="accordionListItem">Custom Objects</li>
+                  <li className="accordionListItem">Formulas</li>
+                  <li className="accordionListItem">Validation Rules</li>
+                  <li className="accordionListItem">Profiles</li>
+                  <li className="accordionListItem">Permission Sets</li>
+                  <li className="accordionListItem">Workflows</li>
+                  <li className="accordionListItem">Approval Processes</li>
+                  <li className="accordionListItem">Email Templates</li>
+                  <li className="accordionListItem">Process Builder</li>
+                  <li className="accordionListItem">Flows</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -229,9 +236,14 @@ const AboutMe = () => {
                 <Typography>Apex</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  Classes, Interfaces, Triggers, Batch Apex, Queueable, Callouts
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">Classes</li>
+                  <li className="accordionListItem">Interfaces</li>
+                  <li className="accordionListItem">Triggers</li>
+                  <li className="accordionListItem">Batch Apex</li>
+                  <li className="accordionListItem">Queueable</li>
+                  <li className="accordionListItem">Callouts</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -244,10 +256,14 @@ const AboutMe = () => {
                 <Typography>Integration</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  REST API, SOAP API, Bulk API, Metadata API, Webservices,
-                  Informatica
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">REST API</li>
+                  <li className="accordionListItem">SOAP API</li>
+                  <li className="accordionListItem">Bulk API</li>
+                  <li className="accordionListItem">Metadata API</li>
+                  <li className="accordionListItem">Webservices</li>
+                  <li className="accordionListItem">Informatica</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -260,9 +276,12 @@ const AboutMe = () => {
                 <Typography>User Interface</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  Visualforce, Aura Components, Lightning Web Components, SLDS
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">Lightning Web Components</li>
+                  <li className="accordionListItem">Aura Components</li>
+                  <li className="accordionListItem"> Visualforce</li>
+                  <li className="accordionListItem">SLDS</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -275,9 +294,11 @@ const AboutMe = () => {
                 <Typography>Reporting</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  Tableau, Conga, Salesforce Reports/Dashboards
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">Salesforce Reports/Dashboards</li>
+                  <li className="accordionListItem">Conga</li>
+                  <li className="accordionListItem">Tableau</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -290,11 +311,16 @@ const AboutMe = () => {
                 <Typography>Design Patterns</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  coding best practices, bulkification, fflib, service classes,
-                  test factories, enterprise architecture, scalability,
-                  reliability
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">coding best practices</li>
+                  <li className="accordionListItem">bulkification</li>
+                  <li className="accordionListItem">fflib</li>
+                  <li className="accordionListItem">service classes</li>
+                  <li className="accordionListItem">test factories</li>
+                  <li className="accordionListItem">enterprise architectures</li>
+                  <li className="accordionListItem">scalability</li>
+                  <li className="accordionListItem">reliability</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -307,9 +333,12 @@ const AboutMe = () => {
                 <Typography>IDE</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  VSCode, IntelliJ, Eclipse, Developer Console
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">VSCode</li>
+                  <li className="accordionListItem">IntelliJ</li>
+                  <li className="accordionListItem">Eclipse</li>
+                  <li className="accordionListItem">Developer Console</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -322,9 +351,11 @@ const AboutMe = () => {
                 <Typography>Release</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  Salesforce CLI, SFDX, CI/CD (Azure DevOps)
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">Salesforce CLI</li>
+                  <li className="accordionListItem">SFDX</li>
+                  <li className="accordionListItem">CI/CD (Azure DevOps)</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -337,9 +368,12 @@ const AboutMe = () => {
                 <Typography>Agile</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  Azure Boards, ServiceNow, Workfront, Jira
-                </Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">Azure Boards</li>
+                  <li className="accordionListItem">ServiceNow</li>
+                  <li className="accordionListItem">Workfront</li>
+                  <li className="accordionListItem">Jira</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
             <Accordion className="accordion">
@@ -352,7 +386,12 @@ const AboutMe = () => {
                 <Typography>Other Languages</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>JavaScript, Java, SQL, Excel</Typography>
+                <ul className="accordionList">
+                  <li className="accordionListItem">JavaScript</li>
+                  <li className="accordionListItem">Java</li>
+                  <li className="accordionListItem">SQL</li>
+                  <li className="accordionListItem">Excel</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
           </div>

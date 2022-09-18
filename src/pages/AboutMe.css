@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
 }
@@ -26,10 +27,6 @@
 }
 
 .skills {
-    border-top-left-radius: 0.5rem;
-    padding: 1rem;
-    background-color: var(--section-color-1);
-    flex-grow: 2;
 }
 
 .skillList {
@@ -88,6 +85,7 @@
     padding: 0.5rem;
     padding-top: 1rem;
     min-width: 20rem;
+    flex-grow: 1;
 }
 
 .paperHeader {
@@ -99,7 +97,7 @@
 .timelineContent{
     /*background-color: #FFF;
     border-radius: 2rem;*/
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
     font-family: 'NotoSans';
 }
 
@@ -120,19 +118,24 @@
 
 .projectCard {
     background-color: #F3F3F7;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
-.accordionContainer {
-    /*display: flex;
+.accordionContainer{
+    padding: 0.5rem;
+}
+
+.accordionList{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;*/
-    padding: 1rem;
+    justify-content: left;
+    column-gap: 2rem;
 }
 
-.accordion {
-    /*margin: 1rem;
-    width: 40%;*/
+.accordionListItem{
+    width: 30%;
+    padding: 0.2rem;
+    
 }
 
 @media screen and (max-width: 600px)
@@ -148,5 +151,9 @@
 
     .paperHeader {
         padding: 0;
+    }
+
+    .timelineContentHeader{
+        padding-top: 1.4rem;
     }
 }
