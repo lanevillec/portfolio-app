@@ -43,6 +43,7 @@ const AboutMe = () => {
           display: "flex",
           flexWrap: "wrap",
           padding: 0,
+          margin: 0,
           justifyContent: "center",
           "& > :not(style)": {
             m: 1,
