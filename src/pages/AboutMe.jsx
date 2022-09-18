@@ -50,7 +50,7 @@ const AboutMe = () => {
           </h2>
         </div>
         <Paper className="paper" elevation={3}>
-          <h2 className="paperHeader">My Journey</h2>
+          <h2 className="paperHeader">Journey</h2>
           <Timeline position="alternate">
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
@@ -122,7 +122,7 @@ const AboutMe = () => {
           </Timeline>
         </Paper>
         <Paper className="paper" elevation={3}>
-          <h2 className="paperHeader">My Projects</h2>
+          <h2 className="paperHeader">Projects</h2>
           <Card
             className="projectCard"
             sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
@@ -154,7 +154,7 @@ const AboutMe = () => {
           </Card>
         </Paper>
         <Paper className="paper" elevation={3}>
-          <h2 className="paperHeader">My Certs</h2>
+          <h2 className="paperHeader">Certs</h2>
           <ul className="sfCertList">
             <li>
               <img className="sfCertIcon" src={SFAdmin} alt="SFAdmin" />
@@ -181,7 +181,7 @@ const AboutMe = () => {
           </ul>
         </Paper>
         <Paper className="paper" elevation={3}>
-          <h2 className="paperHeader">My Skills</h2>
+          <h2 className="paperHeader">Skills</h2>
           <div className="accordionContainer">
             <Accordion className="accordion">
               <AccordionSummary
