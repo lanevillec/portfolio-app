@@ -42,6 +42,7 @@ const AboutMe = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
+          padding: 0,
           justifyContent: "center",
           "& > :not(style)": {
             m: 1,

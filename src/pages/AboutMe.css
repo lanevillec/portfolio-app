@@ -3,7 +3,6 @@
     --section-color-1:#FFF;
     --section-color-2: #EFFBF5;
     font-family: 'NotoSans';
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,7 +13,6 @@
 
 .aboutMeComp {
     width:50%;
-    color: var(--hover-font-color);
     margin: 0.25rem;
 }
 

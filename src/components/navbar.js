@@ -56,11 +56,6 @@ const Navbar = () => {
     setValue(newValue);
   };
 
-  function handleClick(event) {
-    event.preventDefault();
-    console.info("You clicked a breadcrumb.");
-  }
-
   return (
     <div className="navigation-menu">
       <div className="nameAndTabs">

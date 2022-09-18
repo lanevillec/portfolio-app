@@ -10,8 +10,7 @@ import Interests from "./pages/Interests";
 
 const App = () => {
 
-
-  useEffect(() => {
+  /*useEffect(() => {
     // call api or anything
     console.log("loaded");
     window.addEventListener("scroll", handleScroll);
@@ -31,7 +30,7 @@ const App = () => {
       addClasses = false;
       document.getElementById("tabList").classList.remove('docked');
     }
-  }
+  }*/
 
   return (
     <BrowserRouter>
