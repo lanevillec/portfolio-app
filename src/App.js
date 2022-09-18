@@ -36,7 +36,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <div>
-      <Navbar/>
+      <Navbar className="navBar"/>
       <Routes>
         <Route exact path="/" element={<AboutMe/>}/>
         <Route exact path="/AboutMe" element={<AboutMe/>}/>
