@@ -50,8 +50,8 @@
     flex-direction: column;
 }
 
-.nav{
-    padding-left: 1rem;
+.navLinks {
+    padding-left: 6.5rem;
 }
 
 .name {
@@ -62,7 +62,7 @@
     margin: 0;
     padding-top: 2rem;
     padding-left: 1rem;
-    padding-bottom: 0;
+    padding-bottom: 0.5rem;
     justify-content: center;
     font-family: 'NotoSans';
     flex-grow: 1;
@@ -71,55 +71,6 @@
 
 .nameText {
     margin: 0;
-    padding: 0.5rem;
-}
-
-/* <ul> */
-.tabList {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
-.tab {
-    /*padding: 0.5rem;*/
-    padding: 0.4rem;
-    justify-content: center;
-    color: var(--font-color);
-    background-color: var(--unselected-tab-color);
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    width: 100%;
-    display: flex;
-    font-family: 'NotoSans';
-    font-weight: lighter;
-    border-top: 0.05rem solid var(--border-color);
-    border-left: 0.005rem  solid  var(--border-color);
-    border-right: 0.005rem  solid var(--border-color);
-
-    transition: all 0.5s ease-out;
-    /*border-bottom: 0.01rem  solid var(--border-color);*/
-}
-
-.selectedTab {
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom: 0;
-    border-top: 0.05rem solid var(--border-color);
-    border-left: 0.02rem  solid  var(--border-color);
-    border-right: 0.02rem  solid var(--border-color);
-    background-color: var(--selected-tab-color);
-    font-weight: bolder;
-}
-
-/* <ul> */
-.links {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
 }
 
 a {
@@ -130,30 +81,17 @@ a:hover {
     color: var(--hover-font-color);
 }
 
-
-
-/*h1:hover {
-    color: var(--hover-font-color);
-}*/
-
-/*.navbar li {
-    size: 12px;
-}*/
-
 @media screen and (max-width: 600px)
 {
-    .name {
+
+    .nameAndContactInfo{
         justify-content: center;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
-        padding: 0;
-        padding-top: 2rem;
     }
 
     .contactList{
         justify-content: center;
         padding: 0;
-        padding-bottom: 1rem;
+        /*padding-bottom: 1rem;*/
         
     }
 
@@ -161,5 +99,22 @@ a:hover {
         position: fixed;
         bottom: 0;
         width: 100%;
+    }
+
+    
+    .name {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .nameText {
+        text-align: center;
+        
+    }
+
+    .navLinks {
+        justify-content: center;
+        padding: 0;
+        display: flex;
     }
 }

@@ -32,8 +32,6 @@ const AboutMe = () =>{
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          paddingRight: "10%",
-          paddingLeft: "10%",
           justifyContent: "center",
           "& > :not(style)": {
             m: 1,
@@ -52,31 +50,31 @@ const AboutMe = () =>{
           <Timeline position="alternate">
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2008
+                Today
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
-                <h3 className="timelineContentHeader">University At Albany</h3>
+                <h3 className="timelineContentHeader">Neuberger Berman</h3>
                 <p className="timelineContentBody">
-                  b.s. physics, minor computer science
+                salesforce developer - scrum master - project manager
                 </p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2012
+                2019
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
-                <h3 className="timelineContentHeader">Restaurant Career</h3>
+                <h3 className="timelineContentHeader">FDM Group</h3>
                 <p className="timelineContentBody">
-                  line cook - general manager - sous chef
+                  technology consultant
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -89,28 +87,28 @@ const AboutMe = () =>{
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
-                <h3 className="timelineContentHeader ">FDM Group</h3>
-                <p className="timelineContentBody">technology consultant</p>
+                <h3 className="timelineContentHeader ">Restaurant Career</h3>
+                <p className="timelineContentBody">line cook - general manager - sous chef</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2019
+                2012
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
-                <h3 className="timelineContentHeader">Neuberger Berman</h3>
+                <h3 className="timelineContentHeader">University at Albany</h3>
                 <p className="timelineContentBody">
-                  salesforce developer - scrum master - project manager
+                  b.s. physics, minor computer science
                 </p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2022
+                2008
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot />
@@ -175,7 +173,7 @@ const AboutMe = () =>{
         </Paper>
         <Paper className="paper" elevation={3}>
           <h2 className="paperHeader">My Skills</h2>
-          
+
         </Paper>
       </Box>
     </div>
