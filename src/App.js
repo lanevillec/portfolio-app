@@ -38,7 +38,6 @@ const App = () => {
     <div>
       <Navbar className="navBar"/>
       <Routes>
-        <Route exact path="/" element={<AboutMe/>}/>
         <Route exact path="/AboutMe" element={<AboutMe/>}/>
         <Route exact path="/Projects" element={<Projects/>}/>
         <Route exact path="/AboutMe" element={<AboutMe/>}/>

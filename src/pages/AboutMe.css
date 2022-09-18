@@ -8,20 +8,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .aboutMeComp {
     width:50%;
-    padding: 1rem;
     color: var(--hover-font-color);
-    border-radius: 0.5rem;
     margin: 0.25rem;
 }
 
 .overview {
-    border-top-left-radius: 0.5rem;
     width: 100%;
     text-align: center;
 }
@@ -168,5 +165,9 @@
 
     .timelineContentHeader{
         padding-top: 1.4rem;
+    }
+
+    .sfCertIcon {
+        width: 4rem;
     }
 }

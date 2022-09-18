@@ -5,6 +5,10 @@
   background-color: var(--black);
 }
 
+.appBar{
+  background-color: #FFF;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
