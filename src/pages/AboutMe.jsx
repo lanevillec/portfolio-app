@@ -26,6 +26,12 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+import SchoolIcon from '@mui/icons-material/School';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import ComputerIcon from '@mui/icons-material/Computer';
+
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 
@@ -54,10 +60,12 @@ const AboutMe = () => {
           <Timeline position="alternate">
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                Today
+              <p className="timelineYear">Today</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot>
+                  <EmojiEmotionsIcon/>
+                </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
@@ -69,10 +77,12 @@ const AboutMe = () => {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2019
+                <p className="timelineYear">2019</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot>
+                  <ComputerIcon/>
+                </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
@@ -82,10 +92,12 @@ const AboutMe = () => {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2018
+              <p className="timelineYear">2018</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot>
+                  <AutoStoriesIcon/>
+                </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
@@ -97,10 +109,12 @@ const AboutMe = () => {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2012
+              <p className="timelineYear">2012</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot>
+                  <RestaurantIcon/>
+                </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="timelineContent">
@@ -112,10 +126,12 @@ const AboutMe = () => {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                2008
+              <p className="timelineYear">2008</p>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot>
+                  <SchoolIcon/>
+                </TimelineDot>
               </TimelineSeparator>
               <TimelineContent></TimelineContent>
             </TimelineItem>
@@ -126,6 +142,7 @@ const AboutMe = () => {
           <Card
             className="projectCard"
             sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
+            elevation={0}
           >
             <CardContent>A file folder system native to Salesforce</CardContent>
             <CardActions>
@@ -135,6 +152,7 @@ const AboutMe = () => {
           <Card
             className="projectCard"
             sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
+            elevation={0}
           >
             <CardContent>
               An integration from Salesforce to a deal closing tool
@@ -146,6 +164,7 @@ const AboutMe = () => {
           <Card
             className="projectCard"
             sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
+            elevation={0}
           >
             <CardContent>An org to org migration</CardContent>
             <CardActions>
