@@ -55,7 +55,69 @@ const AboutMe = () => {
             solutions on the lightning platform.
           </h2>
         </div>
-        <Paper className="paper" elevation={3}>
+        <Paper className="paper projects" elevation={3}>
+          <h2 className="paperHeader">Projects</h2>
+          <Card
+            className="projectCard"
+            sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
+            elevation={0}
+          >
+            <CardContent>A file folder system native to Salesforce</CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+          <Card
+            className="projectCard"
+            sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
+            elevation={0}
+          >
+            <CardContent>
+              An integration from Salesforce to a deal closing tool
+            </CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+          <Card
+            className="projectCard"
+            sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
+            elevation={0}
+          >
+            <CardContent>An org to org migration</CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+        </Paper>
+        <Paper className="paper certs" elevation={3}>
+          <h2 className="paperHeader">Certs</h2>
+          <ul className="sfCertList">
+            <li>
+              <img className="sfCertIcon" src={SFAdmin} alt="SFAdmin" />
+            </li>
+            <li>
+              <img className="sfCertIcon" src={SFAdvAdmin} alt="SFAdvAdmin" />
+            </li>
+            <li>
+              <img
+                className="sfCertIcon"
+                src={SFPlatAppBuilder}
+                alt="SFPlatAppBuilder"
+              />
+            </li>
+            <li>
+              <img className="sfCertIcon" src={SFDevI} alt="SFDevI" />
+            </li>
+            <li>
+              <img className="sfCertIcon" src={SFDevII} alt="SFDevII" />
+            </li>
+            <li>
+              <img className="sfCertIcon" src={SFJScript} alt="SFJScript" />
+            </li>
+          </ul>
+        </Paper>
+        <Paper className="paper journey" elevation={3}>
           <h2 className="paperHeader">Journey</h2>
           <Timeline position="alternate">
             <TimelineItem>
@@ -136,68 +198,6 @@ const AboutMe = () => {
               <TimelineContent className="timelineContent"></TimelineContent>
             </TimelineItem>
           </Timeline>
-        </Paper>
-        <Paper className="paper" elevation={3}>
-          <h2 className="paperHeader">Projects</h2>
-          <Card
-            className="projectCard"
-            sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
-            elevation={0}
-          >
-            <CardContent>A file folder system native to Salesforce</CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card
-            className="projectCard"
-            sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
-            elevation={0}
-          >
-            <CardContent>
-              An integration from Salesforce to a deal closing tool
-            </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card
-            className="projectCard"
-            sx={{ minWidth: 275, backgroundColor: "#F3F3F7" }}
-            elevation={0}
-          >
-            <CardContent>An org to org migration</CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-        </Paper>
-        <Paper className="paper" elevation={3}>
-          <h2 className="paperHeader">Certs</h2>
-          <ul className="sfCertList">
-            <li>
-              <img className="sfCertIcon" src={SFAdmin} alt="SFAdmin" />
-            </li>
-            <li>
-              <img className="sfCertIcon" src={SFAdvAdmin} alt="SFAdvAdmin" />
-            </li>
-            <li>
-              <img
-                className="sfCertIcon"
-                src={SFPlatAppBuilder}
-                alt="SFPlatAppBuilder"
-              />
-            </li>
-            <li>
-              <img className="sfCertIcon" src={SFDevI} alt="SFDevI" />
-            </li>
-            <li>
-              <img className="sfCertIcon" src={SFDevII} alt="SFDevII" />
-            </li>
-            <li>
-              <img className="sfCertIcon" src={SFJScript} alt="SFJScript" />
-            </li>
-          </ul>
         </Paper>
         <Paper className="paper skills" elevation={3}>
           <h2 className="paperHeader">Skills</h2>

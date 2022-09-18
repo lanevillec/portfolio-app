@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import HikingIcon from '@mui/icons-material/Hiking';
 
 const Navbar = () => {
+
   return (
     <div className="navigation-menu">
       <div className="nameAndTabs">
@@ -38,7 +39,7 @@ const Navbar = () => {
             </Breadcrumbs>
           </div>
           <Breadcrumbs className="contactList" aria-label="breadcrumb">
-            <Link underline="hover" color="inherit" href="/">
+            <Link underline="hover" color="inherit" href="/" aria-current="page">
               home
             </Link>
             <Link underline="hover" color="inherit" href="/Projects">
