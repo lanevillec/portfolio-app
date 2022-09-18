@@ -2,9 +2,11 @@ import React from 'react';
 const Projects = () =>{
   return (
     <div>
-      <h3>Projects</h3>
+      <h2>Salesforce Projects</h2>
       <div>
-        Projects!
+       <div>A folder structure for Salesforce Files</div>
+       <div>A folder structure for Salesforce Files</div>
+       <div>An org to org migration</div>
       </div>
     </div>
   );
