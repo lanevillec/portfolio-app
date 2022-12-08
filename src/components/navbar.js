@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import AboutMe from "../pages/AboutMe";
 import Projects from "../pages/Projects";
 import Interests from "../pages/Interests";
-import ChatBotGPT from "../../openai-quickstart-node/pages/index"
+import ChatBotGPT from "../openai-quickstart-node/pages/index"
 
 const Navbar = () => {
   function TabPanel(props) {
