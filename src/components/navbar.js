@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import AboutMe from "../pages/AboutMe";
 import Projects from "../pages/Projects";
 import Interests from "../pages/Interests";
+import ChatBotGPT from "../openai-quickstart-node/index"
 
 const Navbar = () => {
   function TabPanel(props) {
@@ -91,8 +92,8 @@ const Navbar = () => {
             </Breadcrumbs>
           </div>
         </div>
-        <Box sx={{ width: "100%", padding: "0rem" }}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Box sx={{ width: "100%", padding: "0rem", margin: "0rem" }}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider", padding: "0rem", margin: "0rem" }}>
             <Tabs
               value={value}
               onChange={handleChange}
@@ -103,6 +104,7 @@ const Navbar = () => {
               <Tab label="About Me" {...a11yProps(0)} />
               <Tab label="Projects" {...a11yProps(1)} />
               <Tab label="Extra" {...a11yProps(2)} />
+              <Tab label="ChatBot GPT" {...a11yProps(3)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
@@ -113,6 +115,9 @@ const Navbar = () => {
           </TabPanel>
           <TabPanel value={value} index={2}>
             <Interests />
+          </TabPanel>
+          <TabPanel value={value} index={3}>
+            <ChatBotGPT />
           </TabPanel>
         </Box>
       </div>
