@@ -1,3 +1,3 @@
 [submodule "src/openai-quickstart-node"] 
-  path = src/openai-quickstart-node"
+  path = src/openai-quickstart-node
   url = https://github.com/openai/openai-quickstart-node.git
